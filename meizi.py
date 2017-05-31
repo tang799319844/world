@@ -38,7 +38,7 @@ def download_img(url):
     try:
         #(p2) = os.path.split(url)
         #(p2, f2) = os.path.split(url)
-        f2 = ''.join(map(lambda xx:(hex(ord(xx))[2:]),os.urandom(16))) #随机字符串作为文件名字，防止名字重复
+        f2 = ''.join(map(lambda xx:(hex(ord(xx))[2:]),os.urandom(16)))
         #if os.path.exists(fdir + "/" + f2):
         #    print "fdir is exists"
         if url:
